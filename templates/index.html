@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption/Decryption</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <h1 class="mt-5 mb-4">Encryption/Decryption</h1>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Result for encryption</h2>
+                <p><strong>Plain Text:</strong> CRYPTOLOGY IS THE PRACTICE AND STUDY OF TECHNIQUES FOR SECURE COMMUNICATION IN THE PRESENCE OF THIRD PARTIES CALLED ADVERSARIES.</p>
+                <p><strong>Encrypted Text:</strong> cylietstgenc aeueerrclmu opyaice  sripaoststn teecid  idpydondeavr nchaehstofrct eosi tfnin qd hhiarforpu.s  oeue er  cis rtmlac</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Result for decryption</h2>
+                <p><strong>Encrypted Text:</strong> TAOTINEN KAT I ODIOAEI OHHLSCTE TTETOEL BI IHI GAO   EPSEA TO SS  EEK  ELRCPTSIY EANRPHMCYEK E CREAAIEJURTE  IEASHI MA DRN RH  AUWTA RF EFTFHENTPSF Q   TAILB E TTECAPMSIYIY SRPURNTBL YCL OANAO  E  TVREAOSHOTTNULSRHK</p>
+                <p><strong>Decrypted Text:</strong> the railfence cipher is an easy to apply transposition cipher that jumbles up the order of the letters of a message in a quick convenient way it also has the security of a key to make it a little bit harder to break</p>
+            </div>
+        </div>
+
+        <h1 class="mt-5">Test your own!</h1>
+        <form method="post" class="mt-3">
+            <div class="form-group">
+                <label for="choice">Choose type:</label>
+                <select id="choice" name="choice" class="form-control">
+                    <option value="encryption">Encryption</option>
+                    <option value="decryption">Decryption</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input_text">Input text:</label>
+                <input type="text" id="input_text" name="input_text" class="form-control" value="kaptain bipin">
+            </div>
+            <div class="form-group">
+                <label for="key_depth">Key Depth:</label>
+                <input type="number" id="key_depth" name="key_depth" class="form-control" value="2">
+            </div>
+            <div class="form-group">
+                <label for="key_repeat">Algorithm Repeat:</label>
+                <input type="number" id="key_repeat" name="key_repeat" class="form-control" value="2">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
