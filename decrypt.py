@@ -1,5 +1,5 @@
 def decryptRailFence(cipher, key, repeat):
-    result = cipher
+    result = cipher.lower()
     for _ in range(repeat):
         rail = [['\n' for _ in range(len(result))]
                 for _ in range(key)]
